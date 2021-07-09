@@ -1,6 +1,14 @@
 from flask import Flask
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    return "why wont this damn thing work!?!?!?!?"
+@app.route("/index")
+def index():
+    return {
+        "ya done goofed, this is not a page. "
+    }
+
+@app.route("/test_page")
+def test_page():
+    return {
+        "this is a test page!"
+    }
