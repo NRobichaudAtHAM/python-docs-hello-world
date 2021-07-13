@@ -10,11 +10,11 @@ def homescreen():
     return render_template("home_page.html")
 
 @app.route("/blue")
-def homescreen():
+def bluescreen():
     return render_template("bluepage.html")
 
 @app.route("/home")
-def homescreen():
+def greenscreen():
     return render_template("greenpage.html")
 
 #with app.test_request_context():
