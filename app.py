@@ -9,4 +9,12 @@ def index():
 def homescreen():
     return render_template("home_page.html")
 
+@app.route("/blue")
+def homescreen():
+    return render_template("bluepage.html")
+
+@app.route("/home")
+def homescreen():
+    return render_template("greenpage.html")
+
 #with app.test_request_context():
