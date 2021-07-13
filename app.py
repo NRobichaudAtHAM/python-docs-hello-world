@@ -6,15 +6,15 @@ def index():
     return "ya done goofed, this is not a page."
 
 @app.route("/home")
-def homescreen():
-    return render_template("/Resources/Templates/home_page.html")
+def homescreen(name=None):
+    return render_template("home_page.html", name=name)
 
 @app.route("/blue")
-def bluescreen():
-    return render_template("/Resources/Templates/bluepage.html")
+def bluescreen(name=None):
+    return render_template("bluepage.html", name=name)
 
-@app.route("/home")
-def greenscreen():
-    return render_template("/Resources/Templates/greenpage.html")
+@app.route("/green")
+def greenscreen(name=None):
+    return render_template("greenpage.html", name=name)
 
 #with app.test_request_context():
