@@ -7,14 +7,14 @@ def index():
 
 @app.route("/home")
 def homescreen():
-    return render_template("home_page.html")
+    return render_template("/Resources/Templates/home_page.html")
 
 @app.route("/blue")
 def bluescreen():
-    return render_template("bluepage.html")
+    return render_template("/Resources/Templates/bluepage.html")
 
 @app.route("/home")
 def greenscreen():
-    return render_template("greenpage.html")
+    return render_template("/Resources/Templates/greenpage.html")
 
 #with app.test_request_context():
